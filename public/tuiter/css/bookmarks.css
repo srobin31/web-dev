@@ -1,0 +1,109 @@
+.wd-main-content {
+  border-bottom: 1px solid rgb(49, 51, 54);
+}
+
+.wd-header {
+  padding: 12px 0 12px 16px;
+}
+
+.wd-title {
+  color: white;
+  font-size: 20px;
+}
+
+.wd-handle {
+  color: lightgray;
+  font-size: 13px;
+}
+
+.wd-tweet {
+  display: inline-flex;
+  font-size: 15px;
+}
+
+.wd-pfp {
+  float: left;
+  padding: 12px 0 0 16px;
+}
+
+.wd-pfp>img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.wd-tweet .wd-body {
+  float: right;
+  padding: 12px 0 0 12px;
+  max-width: 506px;
+}
+
+.wd-body .wd-author {
+  color: lightgray;
+  margin: 0;
+}
+
+.wd-body .wd-name {
+  color: white;
+  font-weight: bold;
+}
+
+.wd-body .wd-tweet-body {
+  padding-right: 16px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.wd-body .wd-tweet-img {
+  box-sizing: border-box;
+  width: 504px;
+  height: 264px;
+  border: 1px solid rgb(47, 51, 54);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wd-tweet-img-caption {
+  box-sizing: border-box;
+  width: 504px;
+  border: 1px solid rgb(47, 51, 54);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.wd-tweet-img-caption>p {
+  margin: 5px;
+}
+
+.wd-caption-title {
+  color: white;
+  font-weight: bold;
+}
+
+.wd-caption-text {
+  color: lightgray;
+}
+
+.wd-tweet-icons {
+  height: 20px;
+  line-height: 20px;
+  padding: 12px 0;
+}
+
+.wd-symbol {
+  float: left;
+  width: 25%;
+  color: rgb(47, 51, 54);
+  text-decoration: none;
+}
+
+.wd-symbol-count {
+  color: rgb(47, 51, 54);
+  margin-left: 12px;
+}
+
+.wd-like {
+  color: red;
+}
