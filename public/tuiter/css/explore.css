@@ -1,0 +1,93 @@
+.wd-form {
+  box-sizing: border-box;
+  float: left;
+  width: 80%;
+  margin: 5px 12px;
+}
+
+.wd-search-bar {
+  box-sizing: border-box;
+  background-color: darkgray;
+  border-radius: 20px;
+  color: white;
+  padding-left: 20px;
+  height: 50px;
+  width: 100%;
+}
+
+.wd-gear-icon {
+  float: right;
+  font-size: 50px;
+  color: rgb(29, 161, 242);
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+.wd-pill {
+  box-sizing: border-box;
+  float: left;
+  width: 16.66%;
+  font-size: 15px;
+  padding: 16px;
+  color: rgb(110, 118, 125);
+  text-decoration: none;
+  text-align: center;
+}
+
+.wd-pill-selected {
+  color: rgb(29, 161, 242);
+  border-bottom: 2px solid rgb(29, 161, 242);
+  font-weight: bold;
+}
+
+.wd-pill:hover {
+  opacity: 0.5;
+  background-color: darkgray;
+}
+
+.wd-section-divider {
+  height: 15px;
+  background-color: rgb(47, 51, 54);
+}
+
+.wd-post {
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  border-top: 1px solid rgb(47, 51, 54);
+  border-bottom: 1px solid rgb(47, 51, 54);
+  padding: 16px;
+  width: 100%;
+}
+
+.wd-post p {
+  margin: 8px;
+  cursor: pointer;
+}
+
+.wd-subtext {
+  font-size: 13px;
+  font-weight: normal;
+  color: rgb(110, 118, 125);
+}
+
+.wd-post .wd-author {
+  color: white;
+  font-weight: bold;
+}
+
+.wd-authored {
+  display: inline-block;
+}
+
+.wd-topic {
+  display: inline-block;
+}
+
+.wd-post img {
+  float: right;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+}
