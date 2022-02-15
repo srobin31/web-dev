@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  padding-left: 16px;
+  border-color: rgb(47, 51, 54);
+  padding-right: 16px;
+  font-family: sans-serif;
+  margin-top: 0;
+}
+
+.wd-grid-row {
+  clear: both;
+}
+
+.wd-main-content {
+  width: 70%;
+  float: left;
+  border-left: 1px solid rgb(47, 51, 54);
+  border-right: 1px solid rgb(47, 51, 54);
+}
