@@ -4,84 +4,228 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/explore.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <form id="search-bar" class="wd-form">
-                <input id="search-bar" class="wd-search-bar" placeholder="Search Tuiter" />
-            </form>
-            <a class="wd-gear-icon" href="explore-settings.html">&#9881;</a>
-        </div>
-    </div>
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <a class="wd-pill wd-pill-selected" href="#">For you</a>
-            <a class="wd-pill" href="#">Trending</a>
-            <a class="wd-pill" href="#">COVID-19</a>
-            <a class="wd-pill" href="#">News</a>
-            <a class="wd-pill" href="#">Sports</a>
-            <a class="wd-pill" href="#">Entertainment</a>
-        </div>
-    </div>
-    <div class="wd-grid-row">
-        <div class="wd-main-content wd-section-divider"></div>
-    </div>
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <div class="wd-post wd-trending">
-                <p class="wd-subtext">Sports - Trending</p>
-                <p>Super Bowl Halftime Show</p>
-                <p class="wd-subtext">92.3K Tweets</p>
+    <div class="container">
+        <div class="row mt-4">
+            <div id="left-sidebar" class="col-2">
+                <div class="list-group">
+                    <li class="list-group-item">
+                        <i class="fab fa-twitter "></i>
+                    </li>
+                    <a class="list-group-item list-group-item-action" href="home.html">
+                        <i class="fas fa-home"></i>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;Home</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action active" href="explore.html">
+                        <i class="fas fa-hashtag"></i>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;Explore</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="notifications.html">
+                        <i class="fas fa-bell"></i>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;Notifications</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="messages.html">
+                        <i class="fas fa-envelope"></i>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;Messages</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="bookmarks.html">
+                        <i class="fas fa-bookmark"></i>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;Bookmarks</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="lists.html">
+                        <i class="fas fa-list"></i>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;Lists</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="profile.html">
+                        <i class="fas fa-user"></i>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;Profile</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="navigation.html">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle fa-stack-1x"></i>
+                            <i class="fas fa-ellipsis-h fa-stack-1x fa-xs fa-inverse"></i>
+                        </span>
+                        <span class="d-none d-xl-inline">&nbsp;&nbsp;More</span>
+                    </a>
+                </div>
+                <a class="btn btn-primary rounded-pill mt-2 w-100" href="tuit.html">Tweet</a>
             </div>
-        </div>
-    </div>
+            <div id="main-content" class="col-6">
+                <div class="row flex-nowrap">
+                    <div class="col-11 rounded-pill border d-flex align-items-center justify-content-between">
+                        <i class="fa fa-search d-inline"></i>
+                        <input class="form-control d-inline border-0 shadow-none wd-w-95" placeholder="Search Tuiter">
+                    </div>
+                    <div class="col-1 text-center">
+                        <a href="explore-settings.html">
+                            <i class="fas fa-cog fa-2x wd-lh-inherit"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <ul class="nav nav-tabs mt-2 flex-nowrap text-nowrap">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="for-you.html">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trending.html">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sports.html">Sports</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="entertainment.html">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <div class="wd-post wd-authored">
-                <img src="images/nyt_cuomo.jpg" />
-                <p class="wd-subtext"><span class="wd-author">The New York Times</span> ‧ Yesterday</p>
-                <p>CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
+                <div class="row position-relative">
+                    <img class="w-100 px-0" src="images/spacex.jpg" />
+                    <h2 class="position-absolute text-white bottom-0">SpaceX's Starship</h2>
+                </div>
+
+                <div class="row border">
+                    <div class="col-9 pt-2">
+                        <p class="text-secondary mb-0">Web Development</p>
+                        <p class="fw-bold d-inline">ReactJS <i class="fa fa-check-circle"></i> - 2h</p>
+                        <p class="fw-bold mb-0">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
+                    </div>
+
+                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                        <img src="images/react-logo.png" class="float-end mw-100 wd-mh-90 rounded" />
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col-9 pt-2">
+                        <p class="fw-bold d-inline">JavaScript <i class="fa fa-check-circle"></i> - 2h</p>
+                        <p class="fw-bold mb-0">JavaScript is programming langauge that can run on browsers as well as desktops</p>
+                        <p class="text-secondary mb-0">123k Tuits</p>
+                    </div>
+
+                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                        <img src="images/js-logo.png" class="float-end mw-100 wd-mh-90 rounded" />
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col-9 pt-2">
+                        <p class="text-secondary mb-0">Web Development</p>
+                        <p class="fw-bold d-inline mb-0">jQuery</p>
+                        <p class="text-secondary mb-0">123k Tuits</p>
+                    </div>
+
+                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                        <img src="images/jquery-logo.png" class="float-end mw-100 wd-mh-90 rounded" />
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col-9 pt-2">
+                        <p class="text-secondary mb-0">Web Development</p>
+                        <p class="fw-bold d-inline">NodeJS <i class="fa fa-check-circle"></i> - 2h</p>
+                        <p class="text-secondary mb-0">123k Tuits</p>
+                    </div>
+
+                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                        <img src="images/nodejs.jpg" class="float-end mw-100 wd-mh-90 rounded" />
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <div class="wd-post wd-topic">
-                <img src="images/covid_ma.jpg" />
-                <p class="wd-subtext">COVID-19 ‧ LIVE</p>
-                <p>COVID-19: News and updates for Massachusetts</p>
-            </div>
-        </div>
-    </div>
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <div class="wd-post wd-authored">
-                <img src="images/booster.jpg" />
-                <p class="wd-subtext"><span class="wd-author">Bloomberg Opinion</span> ‧ Yesterday</p>
-                <p>Thinking about getting a booster? Read this first.</p>
-            </div>
-        </div>
-    </div>
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <div class="wd-post wd-trending">
-                <p class="wd-subtext">Trending in United States</p>
-                <p>Wordle</p>
-                <p class="wd-subtext">9,123 Tweets</p>
-            </div>
-        </div>
-    </div>
-    <div class="wd-grid-row">
-        <div class="wd-main-content">
-            <div class="wd-post wd-topic">
-                <img src="images/olympics.jpg" />
-                <p class="wd-subtext">Beijing 2022 ‧ LIVE</p>
-                <p>Beijing 2022: The United States at the Olympic Winter Games &#127482;&#127480;</p>
+            <div id="right-sidebar" class="col-4 d-none d-lg-grid">
+                <ul class="list-group">
+                    <li class="list-group-item fw-bold">Who To Follow</li>
+                    <li class="list-group-item">
+                        <div class="row m-0 flex-nowrap">
+                            <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
+                                <img src="images/java.jpg" class="rounded-circle mw-100 wd-mh-90" />
+                            </div>
+                            <div class="col-6 px-0 wd-zindex-2">
+                                <div class="d-table-cell align-middle text-nowrap">
+                                    <p class="fw-bold m-0">Java <i class="fa fa-check-circle"></i></p>
+                                    <p class="m-0">@Java</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                                <button class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row m-0 flex-nowrap">
+                            <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
+                                <img src="images/relativity-space.jpg" class="rounded-circle mw-100 wd-mh-90" />
+                            </div>
+                            <div class="col-6 px-0 wd-zindex-2">
+                                <div class="d-table-cell align-middle text-nowrap">
+                                    <p class="fw-bold m-0">Relativity Space <i class="fa fa-check-circle"></i></p>
+                                    <p class="m-0">@relativityspace</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                                <button class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row m-0 flex-nowrap">
+                            <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
+                                <img src="images/virgin-galactic.svg" class="rounded-circle mw-100 wd-mh-90" />
+                            </div>
+                            <div class="col-6 px-0 wd-zindex-2">
+                                <div class="d-table-cell align-middle text-nowrap">
+                                    <p class="fw-bold m-0">Virgin Galactic <i class="fa fa-check-circle"></i></p>
+                                    <p class="m-0">@virgingalactic</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                                <button class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row m-0 flex-nowrap">
+                            <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
+                                <img src="images/nasa.jpg" class="rounded-circle mw-100 wd-mh-90" />
+                            </div>
+                            <div class="col-6 px-0 wd-zindex-2">
+                                <div class="d-table-cell align-middle text-nowrap">
+                                    <p class="fw-bold m-0">NASA <i class="fa fa-check-circle"></i></p>
+                                    <p class="m-0">@NASA</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                                <button class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row m-0 flex-nowrap">
+                            <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
+                                <img src="images/tesla.png" class="rounded-circle mw-100 wd-mh-90" />
+                            </div>
+                            <div class="col-6 px-0 wd-zindex-2">
+                                <div class="d-table-cell align-middle text-nowrap">
+                                    <p class="fw-bold m-0">Tesla <i class="fa fa-check-circle"></i></p>
+                                    <p class="m-0">@Tesla</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                                <button class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
