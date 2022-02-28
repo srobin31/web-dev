@@ -6,13 +6,13 @@
     <title>Explore</title>
     <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
     <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/explore.css" rel="stylesheet" />
+    <link href="../vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="container">
-        <div class="row mt-4">
-            <div id="left-sidebar" class="col-2">
+        <div class="row mt-2">
+            <div id="left-sidebar" class="col-2 col-md-2 col-lg-1 col-xl-2">
                 <div class="list-group">
                     <li class="list-group-item">
                         <i class="fab fa-twitter "></i>
@@ -46,24 +46,23 @@
                         <span class="d-none d-xl-inline">&nbsp;&nbsp;Profile</span>
                     </a>
                     <a class="list-group-item list-group-item-action" href="navigation.html">
-                        <span class="fa-stack">
-                            <i class="fas fa-circle fa-stack-1x"></i>
-                            <i class="fas fa-ellipsis-h fa-stack-1x fa-xs fa-inverse"></i>
-                        </span>
+                        <i class="fas fa-circle"></i>
                         <span class="d-none d-xl-inline">&nbsp;&nbsp;More</span>
                     </a>
                 </div>
-                <a class="btn btn-primary rounded-pill mt-2 w-100" href="tuit.html">Tweet</a>
+                <div class="d-grid mt-2">
+                    <a class="btn btn-primary btn-block rounded-pill" href="tuit.html">Tweet</a>
+                </div>
             </div>
-            <div id="main-content" class="col-6">
+            <div id="main-content" class="col-10 col-lg-7 col-xl-6 px-4">
                 <div class="row flex-nowrap">
-                    <div class="col-11 rounded-pill border d-flex align-items-center justify-content-between">
+                    <div class="col-11 rounded-pill border d-flex align-items-center justify-content-between bg-white">
                         <i class="fa fa-search d-inline"></i>
-                        <input class="form-control d-inline border-0 shadow-none wd-w-95" placeholder="Search Tuiter">
+                        <input class="form-control d-inline border-0 shadow-none" placeholder="Search Tuiter">
                     </div>
                     <div class="col-1 text-center">
                         <a href="explore-settings.html">
-                            <i class="fas fa-cog fa-2x wd-lh-inherit"></i>
+                            <i class="fas fa-cog fa-2x lh-base"></i>
                         </a>
                     </div>
                 </div>
@@ -87,60 +86,62 @@
                     </ul>
                 </div>
 
-                <div class="row position-relative">
+                <div class="row mb-2 position-relative">
                     <img class="w-100 px-0" src="images/spacex.jpg" />
                     <h2 class="position-absolute text-white bottom-0">SpaceX's Starship</h2>
                 </div>
 
-                <div class="row border">
-                    <div class="col-9 pt-2">
-                        <p class="text-secondary mb-0">Web Development</p>
-                        <p class="fw-bold d-inline">ReactJS <i class="fa fa-check-circle"></i> - 2h</p>
-                        <p class="fw-bold mb-0">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
+                <ul class="list-group mb-2">
+                    <div class="row list-group-item d-flex">
+                        <div class="col-9 pt-2">
+                            <p class="text-secondary mb-0">Web Development</p>
+                            <p class="fw-bold d-inline">ReactJS <i class="fa fa-check-circle"></i> - 2h</p>
+                            <p class="fw-bold mb-0">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
+                        </div>
+
+                        <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                            <img src="images/react-blue.jpg" class="float-end w-100 rounded" />
+                        </div>
                     </div>
 
-                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
-                        <img src="images/react-logo.png" class="float-end mw-100 wd-mh-90 rounded" />
-                    </div>
-                </div>
+                    <div class="row list-group-item d-flex">
+                        <div class="col-9 pt-2">
+                            <p class="fw-bold d-inline">JavaScript <i class="fa fa-check-circle"></i> - 2h</p>
+                            <p class="fw-bold mb-0">JavaScript is programming langauge that can run on browsers as well as desktops</p>
+                            <p class="text-secondary mb-0">123k Tuits</p>
+                        </div>
 
-                <div class="row border">
-                    <div class="col-9 pt-2">
-                        <p class="fw-bold d-inline">JavaScript <i class="fa fa-check-circle"></i> - 2h</p>
-                        <p class="fw-bold mb-0">JavaScript is programming langauge that can run on browsers as well as desktops</p>
-                        <p class="text-secondary mb-0">123k Tuits</p>
-                    </div>
-
-                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
-                        <img src="images/js-logo.png" class="float-end mw-100 wd-mh-90 rounded" />
-                    </div>
-                </div>
-
-                <div class="row border">
-                    <div class="col-9 pt-2">
-                        <p class="text-secondary mb-0">Web Development</p>
-                        <p class="fw-bold d-inline mb-0">jQuery</p>
-                        <p class="text-secondary mb-0">123k Tuits</p>
+                        <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                            <img src="images/js-logo.png" class="float-end w-100 rounded" />
+                        </div>
                     </div>
 
-                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
-                        <img src="images/jquery-logo.png" class="float-end mw-100 wd-mh-90 rounded" />
-                    </div>
-                </div>
+                    <div class="row list-group-item d-flex">
+                        <div class="col-9 pt-2">
+                            <p class="text-secondary mb-0">Web Development</p>
+                            <p class="fw-bold d-inline mb-0">jQuery</p>
+                            <p class="text-secondary mb-0">123k Tuits</p>
+                        </div>
 
-                <div class="row border">
-                    <div class="col-9 pt-2">
-                        <p class="text-secondary mb-0">Web Development</p>
-                        <p class="fw-bold d-inline">NodeJS <i class="fa fa-check-circle"></i> - 2h</p>
-                        <p class="text-secondary mb-0">123k Tuits</p>
+                        <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                            <img src="images/jquery-logo.png" class="float-end w-100 rounded" />
+                        </div>
                     </div>
 
-                    <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
-                        <img src="images/nodejs.jpg" class="float-end mw-100 wd-mh-90 rounded" />
+                    <div class="row list-group-item d-flex">
+                        <div class="col-9 pt-2">
+                            <p class="text-secondary mb-0">Web Development</p>
+                            <p class="fw-bold d-inline">NodeJS <i class="fa fa-check-circle"></i> - 2h</p>
+                            <p class="text-secondary mb-0">123k Tuits</p>
+                        </div>
+
+                        <div class="col-3 d-flex flex-wrap align-items-center justify-content-center">
+                            <img src="images/nodejs.jpg" class="float-end w-100 rounded" />
+                        </div>
                     </div>
-                </div>
+                </ul>
             </div>
-            <div id="right-sidebar" class="col-4 d-none d-lg-grid">
+            <div id="right-sidebar" class="d-none d-lg-block col-lg-4 col-xl-4">
                 <ul class="list-group">
                     <li class="list-group-item fw-bold">Who To Follow</li>
                     <li class="list-group-item">
@@ -148,13 +149,13 @@
                             <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
                                 <img src="images/java.jpg" class="rounded-circle mw-100 wd-mh-90" />
                             </div>
-                            <div class="col-6 px-0 wd-zindex-2">
+                            <div class="col-6 px-0">
                                 <div class="d-table-cell align-middle text-nowrap">
                                     <p class="fw-bold m-0">Java <i class="fa fa-check-circle"></i></p>
                                     <p class="m-0">@Java</p>
                                 </div>
                             </div>
-                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0">
                                 <button class="btn btn-primary rounded-pill">Follow</button>
                             </div>
                         </div>
@@ -164,13 +165,13 @@
                             <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
                                 <img src="images/relativity-space.jpg" class="rounded-circle mw-100 wd-mh-90" />
                             </div>
-                            <div class="col-6 px-0 wd-zindex-2">
+                            <div class="col-6 px-0">
                                 <div class="d-table-cell align-middle text-nowrap">
                                     <p class="fw-bold m-0">Relativity Space <i class="fa fa-check-circle"></i></p>
                                     <p class="m-0">@relativityspace</p>
                                 </div>
                             </div>
-                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0">
                                 <button class="btn btn-primary rounded-pill">Follow</button>
                             </div>
                         </div>
@@ -180,13 +181,13 @@
                             <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
                                 <img src="images/virgin-galactic.svg" class="rounded-circle mw-100 wd-mh-90" />
                             </div>
-                            <div class="col-6 px-0 wd-zindex-2">
+                            <div class="col-6 px-0">
                                 <div class="d-table-cell align-middle text-nowrap">
                                     <p class="fw-bold m-0">Virgin Galactic <i class="fa fa-check-circle"></i></p>
                                     <p class="m-0">@virgingalactic</p>
                                 </div>
                             </div>
-                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0">
                                 <button class="btn btn-primary rounded-pill">Follow</button>
                             </div>
                         </div>
@@ -197,13 +198,13 @@
                             <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
                                 <img src="images/nasa.jpg" class="rounded-circle mw-100 wd-mh-90" />
                             </div>
-                            <div class="col-6 px-0 wd-zindex-2">
+                            <div class="col-6 px-0">
                                 <div class="d-table-cell align-middle text-nowrap">
                                     <p class="fw-bold m-0">NASA <i class="fa fa-check-circle"></i></p>
                                     <p class="m-0">@NASA</p>
                                 </div>
                             </div>
-                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0">
                                 <button class="btn btn-primary rounded-pill">Follow</button>
                             </div>
                         </div>
@@ -214,13 +215,13 @@
                             <div class="col-2 d-flex flex-wrap align-items-center justify-content-center">
                                 <img src="images/tesla.png" class="rounded-circle mw-100 wd-mh-90" />
                             </div>
-                            <div class="col-6 px-0 wd-zindex-2">
+                            <div class="col-6 px-0">
                                 <div class="d-table-cell align-middle text-nowrap">
                                     <p class="fw-bold m-0">Tesla <i class="fa fa-check-circle"></i></p>
                                     <p class="m-0">@Tesla</p>
                                 </div>
                             </div>
-                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0 wd-zindex-1">
+                            <div class="col-4 d-flex flex-wrap align-items-center justify-content-end px-0">
                                 <button class="btn btn-primary rounded-pill">Follow</button>
                             </div>
                         </div>
