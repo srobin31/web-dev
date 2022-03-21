@@ -35,7 +35,7 @@ const ExploreComponent = () => {
                 </ul>
             </div>
             <div className="row mb-2 position-relative">
-                <img className="w-100 px-0" src="images/spacex.jpg" />
+                <img className="w-100 px-0" src="images/spacex.jpg" alt="" />
                 <h2 className="position-absolute text-white bottom-0">SpaceX's Starship</h2>
             </div>
             <PostSummaryList/>

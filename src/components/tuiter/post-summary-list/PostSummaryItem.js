@@ -17,7 +17,7 @@ const PostSummaryItem = ({post = {
             </div>
 
             <div className="col-3 d-flex flex-wrap align-items-center justify-content-center">
-                <img src={post.image} className="float-end w-100 rounded" />
+                <img src={post.image} className="float-end w-100 rounded" alt="" />
             </div>
         </div>
     );

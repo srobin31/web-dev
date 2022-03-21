@@ -9,7 +9,7 @@ const WhoToFollowListItem = ({who = {
         <li className="list-group-item">
             <div className="row m-0 flex-nowrap">
                 <div className="col-2 d-flex flex-wrap align-items-center justify-content-center">
-                    <img src={who.avatarIcon} className="rounded-circle mw-100 wd-mh-90" />
+                    <img src={who.avatarIcon} className="rounded-circle mw-100 wd-mh-90" alt="" />
                 </div>
                 <div className="col-6 px-0">
                     <div className="d-table-cell align-middle text-nowrap">
