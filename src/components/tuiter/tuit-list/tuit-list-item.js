@@ -35,29 +35,34 @@ const TuitListItem = ({ key, tuit }) => {
         <p className="wd-tweet-body">{tuit.tuit}</p>
         {tuit.attachments !== undefined &&
           tuit.attachments.image !== undefined && (
-            <img className="wd-tweet-img" src={tuit.attachments.image} />
+            <img
+              className="wd-tweet-img"
+              src={tuit.attachments.image}
+              alt="Tweet Attachment"
+            />
           )}
         {tuit.attachments !== undefined &&
           tuit.attachments.video !== undefined && (
             <iframe
+              title="Tweet Video"
               className="wd-tweet-img"
               src={`https://www.youtube.com/embed/${tuit.attachments.video}`}
             />
           )}
 
         <div className="wd-tweet-icons">
-          <a className="wd-symbol" href="#">
+          <span className="wd-symbol wd-interact">
             <i className="far fa-comment"></i>
             <span className="wd-symbol-count">{tuit.stats.comments}</span>
-          </a>
-          <a className="wd-symbol" href="#">
+          </span>
+          <span className="wd-symbol wd-interact">
             <i className="fa fa-retweet"></i>
             <span className="wd-symbol-count">{tuit.stats.retuits}</span>
-          </a>
+          </span>
           <TuitStats tuit={tuit} />
-          <a className="wd-symbol" href="#">
+          <span className="wd-symbol wd-interact">
             <i className="fa fa-share"></i>
-          </a>
+          </span>
         </div>
       </div>
     </div>

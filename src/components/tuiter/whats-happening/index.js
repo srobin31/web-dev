@@ -25,18 +25,18 @@ const WhatsHappening = () => {
         ></textarea>
       </div>
       <div className="row d-table w-100 wd-wh-icons">
-        <a className="wd-wh-symbol" href="#">
+        <span className="wd-wh-symbol wd-interact">
           <i className="fas fa-image fa-lg"></i>
-        </a>
-        <a className="wd-wh-symbol" href="#">
+        </span>
+        <span className="wd-wh-symbol wd-interact">
           <i className="fas fa-chart-line fa-lg"></i>
-        </a>
-        <a className="wd-wh-symbol" href="#">
+        </span>
+        <span className="wd-wh-symbol wd-interact">
           <i className="far fa-smile fa-lg"></i>
-        </a>
-        <a className="wd-wh-symbol" href="#">
+        </span>
+        <span className="wd-wh-symbol wd-interact">
           <i className="far fa-calendar fa-lg"></i>
-        </a>
+        </span>
         <button
           className="btn btn-primary rounded-pill wd-wh-tuit-btn"
           onClick={tuitClickHandler}

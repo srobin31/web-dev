@@ -19,6 +19,14 @@
   margin: 15px 0;
 }
 
+.wd-wh-symbol {
+    color: #2a9fd6;
+}
+
+.wd-wh-symbol:hover {
+    opacity: 0.8;
+}
+
 .wd-wh-tuit-btn {
   width: 15%;
   float: right;
