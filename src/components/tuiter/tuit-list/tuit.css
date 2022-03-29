@@ -1,0 +1,77 @@
+.wd-interact {
+    cursor: pointer;
+}
+
+.wd-tweet {
+  display: inline-flex;
+  font-size: 15px;
+}
+
+.wd-pfp {
+  float: left;
+  padding-top: 12px;
+}
+
+.wd-pfp>img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.wd-darkgray {
+    color: rgb(64, 64, 64);
+}
+
+.wd-tweet .wd-body {
+  float: right;
+  padding: 12px 0 0 12px;
+  width: 100%;
+  max-width: 506px;
+}
+
+.wd-body .wd-author {
+  color: lightgray;
+  margin: 0;
+}
+
+.wd-body .wd-name {
+  color: white;
+  font-weight: bold;
+}
+
+.wd-body .wd-tweet-body {
+  padding-right: 16px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.wd-body .wd-tweet-img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 264px;
+  border: 1px solid rgb(47, 51, 54);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wd-tweet-icons {
+  height: 20px;
+  line-height: 20px;
+  padding: 12px 0;
+}
+
+.wd-symbol, .wd-symbol:hover {
+  float: left;
+  width: 25%;
+  color: white;
+  text-decoration: none;
+}
+
+.wd-symbol-count {
+  color: white;
+  margin-left: 12px;
+}
+
+.wd-like, .wd-like:hover {
+  color: red;
+}
