@@ -5,23 +5,20 @@ import ConditionalOutput from "./conditional-output";
 import Styles from "./styles";
 import Classes from "./classes";
 import TodoList from "./todo/todo-list";
+import ReduxExamples from "./redux-examples";
 
 const Labs = () => {
-    return(
-        <>
-            <h1>Labs</h1>
-            <TodoList/>
-            <ConditionalOutput/>
-            <Styles/>
-            <Classes/>
-            <Link to="/hello">
-                Hello
-            </Link> |
-            <Link to="/tuiter/">
-                Tuiter
-            </Link>
-        </>
-    )
+  return (
+    <>
+      <h1>Labs</h1>
+      <TodoList />
+      <ConditionalOutput />
+      <Styles />
+      <Classes />
+      <Link to="/hello">Hello</Link> | <Link to="/tuiter/">Tuiter</Link>
+      <ReduxExamples />
+    </>
+  );
 };
 
 export default Labs;

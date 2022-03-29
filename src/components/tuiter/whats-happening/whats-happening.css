@@ -1,0 +1,25 @@
+.wd-wh-pfp {
+  float: left;
+  padding-top: 12px;
+  padding-right: 20px;
+}
+
+.wd-wh-pfp>img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.wd-wh-border {
+  border-bottom: 1px solid gray;
+}
+
+.wd-wh-icons {
+  padding-left: 58px;
+  margin: 15px 0;
+}
+
+.wd-wh-tuit-btn {
+  width: 15%;
+  float: right;
+}
