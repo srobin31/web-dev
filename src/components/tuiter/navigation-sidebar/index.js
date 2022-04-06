@@ -7,7 +7,7 @@ const NavigationSidebar = ({active="explore"}) => {
         <>
             <div className="list-group">
                 {items.map(item => {
-                    return (<NavItem item={item} active={active} />);
+                    return (<NavItem key={item.link} item={item} active={active} />);
                 })}
             </div>
             <div className="d-grid mt-2">

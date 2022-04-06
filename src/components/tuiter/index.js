@@ -6,8 +6,8 @@ import { Outlet } from "react-router-dom";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 
-import whoReducer from "./reducers/who-reducer";
-import tuitsReducer from "./reducers/tuits-reducer";
+import whoReducer from "../../reducers/who-reducer";
+import tuitsReducer from "../../reducers/tuits-reducer";
 
 const reducer = combineReducers({
   who: whoReducer,
