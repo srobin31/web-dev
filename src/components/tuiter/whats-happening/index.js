@@ -6,7 +6,21 @@ import { createTuit } from "../../../actions/tuits-actions";
 import "./whats-happening.css";
 
 const WhatsHappening = () => {
-  const [newTuit, setNewTuit] = useState({ tuit: "" });
+  const [newTuit, setNewTuit] = useState({
+    tuit: "",
+    postedBy: {
+      username: "WebDev",
+    },
+    verified: false,
+    handle: "WebDev",
+    time: "Now",
+    logoImage: "images/me.jpg",
+    avatarImage: "images/me.jpg",
+    comments: 0,
+    retuits: 0,
+    likes: 0,
+    dislikes: 0,
+  });
   const dispatch = useDispatch();
 
   return (
